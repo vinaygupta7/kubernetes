@@ -11,10 +11,10 @@ metadata:
 spec:
   containers:
   - name: app-v1
-     image: nginx
+    image: nginx
   - name: postgres
-     image: postgres
-     env:
+    image: postgres
+    env:
      - name: POSTGRES_PASSWORD
        value: mypassword
      
