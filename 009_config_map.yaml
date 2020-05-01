@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myconfigmap
+  labels:
+    app: myapplication
+data:
+  APP_COLOUR: blue
+
+#To call this in Pod def.
+# Under spec: 
+#          containers: 
+#               envFrom: 
+#               - configMapRef:
+#                     name: myconfigmap
+#
+#
